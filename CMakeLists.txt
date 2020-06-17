@@ -1,7 +1,7 @@
 
 cmake_minimum_required (VERSION 3.2)                                            # минимальаня версия CMake 
 
-               project (my_tutor_first VERSION 0.0.1$ENV{TRAVIS_BULD_NUMBER})   # создание виртуального проекта my_tutor_first а так же номера версии
+               project (my_tutor_first VERSION 0.0.$ENV{TRAVIS_BULD_NUMBER})   # создание виртуального проекта my_tutor_first а так же номера версии
 
           find_package (Threads REQUIRED)                                       # искать потоки
           find_package (Boost   COMPONENTS unit_test_framework REQUIRED)        # искать boost
