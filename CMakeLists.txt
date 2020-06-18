@@ -48,5 +48,5 @@ target_link_libraries (helloworld_for_client                                    
     include (CPack)                                                             # 
 
     enable_testing()
-    add_test (helloworld_test test_version)
+    add_test (tests_from_my_CMake helloworld_test)
 
